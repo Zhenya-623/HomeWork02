@@ -17,5 +17,10 @@ int SecondDigit(int num)
 Console.WriteLine("Введите трёхзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
+if(number>99 && number < 1000)
+{
 int result = SecondDigit(number);
 Console.WriteLine($"Вторая цифра введенного вами числа равна {result}");
+}
+else
+Console.WriteLine($"Число не трёхзначное");
